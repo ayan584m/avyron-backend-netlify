@@ -15,7 +15,8 @@ const app = express()
 app.use(express.json());
 app.use(cors());
 
-const port = process.env.port
+// const port = process.env.port
+const PORT = process.env.PORT || 2000;
 const mongodb_url = process.env.mongodb_url
 
 // app.get("/", ((req, res) => {
