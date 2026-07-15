@@ -31,7 +31,7 @@ app.use("/", router)
 
 mongoose.connect(mongodb_url)
     .then(
-        app.listen(port, () => {
+        app.listen(PORT, () => {
             console.log("Server is running on port ");
         })
     )
